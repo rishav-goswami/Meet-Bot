@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MyMeetBot</title>
+</head>
+
+<body>
+  <h1>Welcome !</h1>
+
+  <style>
+    #urlLabel {
+      display: block;
+      font: 1rem 'Fira Sans', sans-serif;
+    }
+  </style>
+  <label id="urlLabel" for="url">Enter your meeting URL:</label>
+
+  <style>
+    input,
+    label {
+      margin: .4rem 0;
+    }
+  </style>
+  <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
+  <style>
+    label {
+      display: block;
+      font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    input,
+    label {
+      margin: .4rem 0;
+    }
+  </style>
+
+  <label for="appt">Choose a time for your meeting:</label>
+
+  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+  <small id = "time_hint">Office hours are 9am to 6pm</small>
+
+
+  <link rel="stylesheet" href="button.css">
+  <input id="start_bot" type="button" value="Start Auto Bot">
+  <script src="popup.js"></script>
+
+
+
+</body>
+
+</html>
