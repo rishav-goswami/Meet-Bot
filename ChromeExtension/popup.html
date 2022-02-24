@@ -24,7 +24,7 @@
       margin: .4rem 0;
     }
   </style>
-  <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+  <input type="url" name="url" id="url_input_box" placeholder="https://example.com" pattern="https://.*" size="30" required>
 
   <style>
     label {
@@ -40,7 +40,8 @@
 
   <label for="appt">Choose a time for your meeting:</label>
 
-  <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+  <input type="datetime-local" id="appt" name="meeting-time" value =""
+  min="2022-01-01T00:00" max="2030-12-31T00:00" required>
 
   <small id = "time_hint">Office hours are 9am to 6pm</small>
 
