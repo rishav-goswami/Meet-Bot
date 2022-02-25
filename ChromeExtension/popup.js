@@ -41,7 +41,7 @@ chrome.storage.local.get(['prev_time', 'mUrl'], function (result) {
   var date = new Date(entered_time);
   let hifen = (date.getMonth() < 10) ? "-0" : "-";
   let M = (date.getMinutes() < 10) ? ":0" : ":";
-  let T = (date.getHours() < 1) ? "T0" : "T";
+  let T = (date.getHours() < 10) ? "T0" : "T";
   var dateToStr = date.getFullYear() + hifen + (date.getMonth() + 1) + "-" + date.getDate() + T + date.getHours() + M + date.getMinutes();
 
   timeControl.value = dateToStr;

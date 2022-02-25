@@ -6,7 +6,8 @@
     "background":{
         "service_worker": "background.js"
     },
-    "permissions": ["storage","activeTab", "scripting","alarms","notifications"],
+    "permissions": ["storage","activeTab","scripting","alarms","notifications"],
+    
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
@@ -24,8 +25,12 @@
     },
     "options_page": "options.html",
     "content_scripts":[
-      {"matches":["https://meet.google.com/qfc-zsjy-tzd*/"],
-      "all_frames": true,
-      "js": ["content-script.js"]}
-    ]
+      { 
+        "matches": ["<all_urls>"],
+        "match_origin_as_fallback": true,
+        "all_frames": true,
+        "js": ["content-script.js"]
+        }
+    ],
+    "host_permissions":["<all_urls>"]
   }

@@ -1,4 +1,4 @@
-
+// const delay = ms => new Promise(res => setTimeout(res, ms));
 chrome.runtime.onInstalled.addListener(() => {
 
 });
@@ -10,13 +10,37 @@ chrome.storage.local.get(['mUrl'], function (res) {
 
 chrome.alarms.onAlarm.addListener(function (alarm) {
 
-  chrome.tabs.create({ url });
-
-  let [tab] = chrome.tabs.query({ active: true, currentWindow: true });
-
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ["content-script.js"]
-  });
+  // delay(400);
   console.log("Got an alarm!", alarm);
+
+  CurrentTab();
 });
+
+try {
+
+  chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab){
+    if (changeInfo.status == 'complete') {
+      chrome.scripting.executeScript({
+        files: ['content-script.js'],
+        target: { tabId: tab.id }
+      });
+    }
+    //ss
+  });
+} catch (e) {
+  console.log(e);
+}
+
+async function CurrentTab() {
+
+  let tab = await chrome.tabs.create({ url });
+
+  // let queryOptions = { active: true, currentWindow: true };
+  // let [tab] = await chrome.tabs.query(queryOptions);
+  // document.addEventListener("DOMContentLoaded", function () {
+  // chrome.scripting.executeScript({
+  //   target: { tabId: tab.id },
+  //   files: ['content-script.js']
+  // });
+  // });
+}
