@@ -10,16 +10,16 @@
 // let on_meet_mic_OnOff = document.getElementsByClassName('VfPpkd-Bz112c-LgbsSe')[0];
 // let on_meet_cam_OnOff = document.getElementsByClassName('VfPpkd-Bz112c-LgbsSe')[1];
 
+
 join_meeting();
 
 function join_meeting() {
 const delay = ms => new Promise(res => setTimeout(res, ms));
-
     delay(500);
     let joinNow = document.querySelectorAll('.NPEfkd')[0];
     let mic_OnOff = document.getElementsByClassName('U26fgb')[0];
     let cam_OnOff = document.getElementsByClassName('U26fgb')[1];
-
+    
     mic_OnOff.click();
     delay(100);
     cam_OnOff.click();
