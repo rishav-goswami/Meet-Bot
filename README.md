@@ -1,9 +1,9 @@
 
-![Contributors](https://img.shields.io/github/contributors/Jake1924/AutoMeetBOT?style=plastic)
-![Forks](https://img.shields.io/github/forks/Jake1924/AutoMeetBOT?logoColor=05B2DC&style=plastic)
-![Stars](https://img.shields.io/github/stars/Jake1924/AutoMeetBOT?logoColor=F7E733&style=plastic)
-![Licence](https://img.shields.io/github/license/Jake1924/AutoMeetBOT?logoColor=310A31&style=plastic)
-![Issues](https://img.shields.io/github/issues/Jake1924/AutoMeetBOT?logoColor=B3001B&style=plastic)
+![Contributors](https://img.shields.io/github/contributors/Jake1924/Meet-Bot?logoColor=05B2DF&style=plastic)
+![Forks](https://img.shields.io/github/forks/Jake1924/Meet-Bot?logoColor=05B2DC&style=plastic)
+![Stars](https://img.shields.io/github/stars/Jake1924/Meet-Bot?logoColor=F7E933&style=plastic)
+![Licence](https://img.shields.io/github/license/Jake1924/Meet-Bot?logoColor=310A31&style=plastic)
+![Issues](https://img.shields.io/github/issues/Jake1924/Meet-Bot?logoColor=B3001B&style=plastic)
 
 # Meet-Bot
 
