@@ -13,7 +13,8 @@
 join_meeting();
 
 function join_meeting() {
-const delay = ms => new Promise(res => setTimeout(res, ms));
+    
+    const delay = ms => new Promise(res => setTimeout(res, ms));
 
     delay(500);
     let joinNow = document.querySelectorAll('.NPEfkd')[0];
@@ -21,8 +22,8 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
     let cam_OnOff = document.getElementsByClassName('U26fgb')[1];
 
     mic_OnOff.click();
-    delay(100);
+    delay(200);
     cam_OnOff.click();
-    delay(100);
+    delay(200);
     joinNow.click();
 }

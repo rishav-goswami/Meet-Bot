@@ -25,7 +25,6 @@ try {
         target: { tabId: tab.id }
       });
     }
-    //ss
   });
 } catch (e) {
   console.log(e);
