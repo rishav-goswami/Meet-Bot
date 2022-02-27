@@ -19,7 +19,7 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 try {
 
   chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab){
-    if (changeInfo.status == 'complete') {
+    if (changeInfo.status == 'complete' && tab.url === url) {
       chrome.scripting.executeScript({
         files: ['content-script.js'],
         target: { tabId: tab.id }
