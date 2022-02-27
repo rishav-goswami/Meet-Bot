@@ -1,11 +1,15 @@
 const startBot = document.getElementById("start_bot");
+
+// Todo: handle input duration
+const meet_end_duration = document.getElementById("end_min");
+
 let url_box = document.querySelector('input[type="url"]');
 var timeControl = document.querySelector('input[type="datetime-local"]');
 let time_hint = document.getElementById("time_hint");
 let entered_time, entered_time_banner;
 
 
-// Getting time value in entered time
+// Getting url value and storing it locally
 url_box.addEventListener("input", function () {
   let link = "" + url_box.value;
   // Saving time data locally
