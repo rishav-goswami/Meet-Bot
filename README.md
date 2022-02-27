@@ -48,7 +48,11 @@ Contributions are always welcome!
 
 #### Note: When you Add a Change Add it to the README for ease of finding it
 
-### Steps to run locally
+## Projects
+- [Chrome Extension](https://github.com/Jake1924/Meet-Bot/tree/master/ChromeExtension) | [ Guide ](https://github.com/Jake1924/Meet-Bot#steps-to-run-locally)
+- [Meet-Bot-Python](https://github.com/Jake1924/Meet-Bot/tree/master/Meet-Bot-Py) | [ Guide ](https://github.com/Jake1924/Meet-Bot/blob/master/Meet-Bot-Py/Readme.md)
+
+### Steps to run ChromeExtension locally
 
 - Clone this repository git clone https://github.com/Jake1924/Meet-Bot.git
 - Load your extension on Chrome:
