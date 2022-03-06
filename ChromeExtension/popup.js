@@ -44,9 +44,10 @@ chrome.storage.local.get(['prev_time', 'mUrl'], function (result) {
   // Trying to set time value
   var date = new Date(entered_time);
   let hifen = (date.getMonth() < 10) ? "-0" : "-";
+  let d = (date.getDate() < 10) ? "-0" : "-";
   let M = (date.getMinutes() < 10) ? ":0" : ":";
   let T = (date.getHours() < 10) ? "T0" : "T";
-  var dateToStr = date.getFullYear() + hifen + (date.getMonth() + 1) + "-" + date.getDate() + T + date.getHours() + M + date.getMinutes();
+  var dateToStr = date.getFullYear() + hifen + (date.getMonth() + 1) + d + date.getDate() + T + date.getHours() + M + date.getMinutes();
 
   timeControl.value = dateToStr;
   url_box.value = result.mUrl;

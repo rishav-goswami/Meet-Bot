@@ -16,10 +16,11 @@
 - Automatically disable/mutes Microphone & Camera
 
 
-## Authors
+## Contributors
 
 - [@jake1924](https://github.com/Jake1924)
-- [@mohit-2003](https://github.com/mohit-2003) (@Contributer)
+- [@mohit-2003](https://github.com/mohit-2003) 
+- [@judy-n](https://github.com/judy-n) 
 
 ## Screenshots
 

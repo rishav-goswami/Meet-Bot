@@ -13,29 +13,21 @@
 join_meeting();
 
 function join_meeting() {
-<<<<<<< HEAD
-    
-=======
->>>>>>> 8da071f6adc9fa26c21f5567bf848f87f5f0dbc5
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
     delay(500);
     let joinNow = document.querySelectorAll('.NPEfkd')[0];
     let mic_OnOff = document.getElementsByClassName('U26fgb')[0];
     let cam_OnOff = document.getElementsByClassName('U26fgb')[1];
+    let cut_setting = document.getElementsByClassName("VfPpkd-kBDsod")[1];
 
-<<<<<<< HEAD
-    mic_OnOff.click();
-    delay(200);
-    cam_OnOff.click();
-    delay(200);
-    joinNow.click();
-=======
     try {
 
         mic_OnOff.click();
         delay(100);
         cam_OnOff.click();
+        delay(100);
+        cut_setting.click();
         delay(100);
         joinNow.click();
 
@@ -59,5 +51,4 @@ function end_meeting() {
     } catch (e) {
         console.log(e);
     }
->>>>>>> 8da071f6adc9fa26c21f5567bf848f87f5f0dbc5
 }
