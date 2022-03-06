@@ -29,7 +29,7 @@
 
 ## Feedback
 
-If you have any feedback, please reach out to us at rishava343@gmail.com
+If you want to provide any feedback/idea/discussion, please reach out to us at [this](https://github.com/Jake1924/Meet-Bot/discussions) community page.
 
 
 ## Contributing

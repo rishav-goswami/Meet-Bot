@@ -5,39 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>MyMeetBot</title>
+  <link rel="stylesheet" href="./popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Welcome !</h1>
-
-  <style>
-    #urlLabel {
-      display: block;
-      font: 1rem 'Fira Sans', sans-serif;
-    }
-  </style>
+  <h1>Welcome!</h1>
+  <hr/>
   <label id="urlLabel" for="url">Enter your meeting URL:</label>
-  <br>
-  <style>
-    input,
-    label {
-      margin: .4rem 0;
-    }
-  </style>
   <input type="url" name="url" id="url_input_box" placeholder="https://example.com" pattern="https://.*" size="30"
     required>
-  <br>
-  <style>
-    label {
-      display: block;
-      font: 1rem 'Fira Sans', sans-serif;
-    }
-
-    input,
-    label {
-      margin: .4rem 0;
-    }
-  </style>
 
   <label for="appt">Choose a time for your meeting:</label>
   <input type="datetime-local" id="appt" name="meeting-time" value="" min="2022-01-01T00:00" max="2030-12-31T00:00"
@@ -46,10 +23,10 @@
   <small id="time_hint">Office hours are 9am to 6pm</small>
   <br>
 
-  <small for="end_min">Duration of meeting </small>
+  <label for="end_min">Duration of meeting: </label>
   <input type="time|number" id="end_min" name="ending-time" value="60 min">
   <br>
-  <link rel="stylesheet" href="button.css">
+<!--  <link rel="stylesheet" href="button.css">-->
   <input id="start_bot" type="button" value="Start Auto Bot">
   <script src="popup.js"></script>
 
