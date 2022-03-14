@@ -24,7 +24,7 @@
 
 ## Screenshots
 
-![Screenshot](images/get_started128.png)
+![image](https://user-images.githubusercontent.com/77602579/158125906-6ddcd145-c9ed-497d-9283-89061e767943.png)
 
 
 ## Feedback
